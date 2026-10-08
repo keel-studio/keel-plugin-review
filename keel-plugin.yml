@@ -6,7 +6,7 @@ title: "Code Review"
 version: 0.0.0
 publisher: keel
 summary: "Review GitHub and GitLab pull requests inside the Code page. AI comments wait for your OK before they are posted."
-repo: https://github.com/MiladNalbandi/keel-plugin-review
+repo: https://github.com/keel-studio/keel-plugin-review
 license: MIT
 
 requires:
