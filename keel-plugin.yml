@@ -1,0 +1,23 @@
+# The plugin's manifest. Draft: the code still lives in keel-v2, so nothing is released yet.
+# Format: https://github.com/MiladNalbandi/keel-v2/tree/main/docs/plugins/02-plugin-package.md
+schema: 1
+name: review
+title: "Code Review"
+version: 0.0.0
+publisher: keel
+summary: "Review GitHub and GitLab pull requests inside the Code page. AI comments wait for your OK before they are posted."
+repo: https://github.com/MiladNalbandi/keel-plugin-review
+license: MIT
+
+requires:
+  sdk: 1
+  plugins:
+    code: ">=0.1.0"
+optional:
+  keelbot: ">=0.1.0"
+
+parts:
+  api: { jars: [api/keel-plugin-review.jar] }
+  web: { entry: web/index.js }
+  content: content
+  migrations: migrations
